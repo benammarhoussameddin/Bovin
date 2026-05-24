@@ -11,25 +11,25 @@ export default function Footer({ lang }: FooterProps) {
   const isRtl = lang === 'ar';
 
   return (
-    <footer className="bg-[#030712] text-slate-400 py-10 border-t border-slate-900/60 relative overflow-hidden">
+    <footer className="bg-[#030712] text-slate-400 py-14 sm:py-16 border-t border-slate-900/60 relative overflow-hidden">
       {/* Luxurious green ambient light effect at the top */}
       <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent" />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`flex flex-col md:flex-row md:items-center md:justify-between gap-8 ${isRtl ? 'md:flex-row-reverse' : ''}`}>
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className={`flex flex-col md:flex-row md:items-center md:justify-between gap-10 md:gap-16 ${isRtl ? 'md:flex-row-reverse' : ''}`}>
           
           {/* Primary Block: Logo & Description */}
-          <div className={`space-y-4 max-w-md flex flex-col items-center ${isRtl ? 'md:items-end' : 'md:items-start'}`}>
+          <div className={`space-y-3.5 max-w-lg flex flex-col items-center ${isRtl ? 'md:items-end' : 'md:items-start'}`}>
             <div className={`flex items-center gap-3 ${isRtl ? 'flex-row-reverse' : ''}`}>
-              <div className="bg-white px-2.5 py-1.5 rounded-lg h-9 flex items-center justify-center shadow-md border border-white hover:border-emerald-100/55 transition-colors duration-300">
+              <div className="bg-white px-2 py-1 rounded-md h-8 flex items-center justify-center shadow-md border border-white hover:border-emerald-100/55 transition-colors duration-300">
                 <img
                   src={headerLogo}
                   alt="TECHNOOTIZ"
                   referrerPolicy="no-referrer"
-                  className="h-5 w-auto object-contain select-none"
+                  className="h-4.5 w-auto object-contain select-none"
                 />
               </div>
-              <span className="text-[10px] bg-emerald-950/40 text-emerald-400 font-mono font-medium px-2 py-0.5 rounded border border-emerald-900/30 tracking-wider">
+              <span className="text-[10px] bg-emerald-950/45 text-emerald-400 font-mono font-medium px-2 py-0.5 rounded border border-emerald-900/25 tracking-wider">
                 SARL-S
               </span>
             </div>
