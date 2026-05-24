@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { FileCheck, Phone, ShieldCheck, Award } from 'lucide-react';
 import { Language } from '../types';
 import { TRANSLATIONS } from '../data';
-import cowLogo from '../assets/images/cow_leaf_logo_1779560881243.png';
+import cowLogo from '../assets/images/cow_bovine_logo_1779494760885.png';
 
 interface HeroProps {
   lang: Language;
@@ -83,17 +83,17 @@ export default function Hero({ lang }: HeroProps) {
             <div className="absolute -inset-4 border border-dashed border-slate-200 rounded-full scale-100 group-hover:scale-105 group-hover:border-emerald-200/40 transition-all duration-[1200ms] ease-out pointer-events-none" />
 
             {/* Inner rotating frame wrapper with premium comfortable padding */}
-            <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full flex items-center justify-center bg-white shadow-xl shadow-emerald-900/5 border border-slate-100/80 p-5 sm:p-6 md:p-7 transition-all duration-500 group-hover:shadow-emerald-900/10">
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full flex items-center justify-center bg-white shadow-2xl shadow-emerald-950/10 border border-slate-100 p-2 transition-all duration-500 group-hover:shadow-emerald-950/15">
               
               {/* Concentric styling inside */}
-              <div className="absolute inset-1 border border-slate-100 rounded-full pointer-events-none" />
-              <div className="absolute inset-2 border border-dashed border-emerald-550/10 rounded-full group-hover:rotate-12 transition-all duration-1000 pointer-events-none" />
+              <div className="absolute inset-1 border border-slate-100/80 rounded-full pointer-events-none" />
+              <div className="absolute inset-2 border border-dashed border-emerald-500/20 rounded-full group-hover:rotate-6 transition-all duration-1000 pointer-events-none" />
 
               <img
                 src={cowLogo}
                 alt="Logo Bovins TECHNOOTIZ"
                 referrerPolicy="no-referrer"
-                className="w-full h-full object-contain relative z-10 transform group-hover:scale-104 transition-transform duration-500"
+                className="w-[88%] h-[88%] object-contain relative z-10 transition-transform duration-500 select-none pointer-events-none mix-blend-multiply"
               />
             </div>
 
