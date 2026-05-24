@@ -1,0 +1,6 @@
+{
+  "name": "TECHNOOTIZ Bovins",
+  "description": "Portail officiel de TECHNOOTIZ Sarl-s : Pôle d'Import-Export de Bovins. Demande de devis et contact rapide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
