@@ -57,29 +57,17 @@ export default function Hero({ lang }: HeroProps) {
             </span>
           </motion.div>
 
-          {/* Title */}
+          {/* Title - Showing subtitle as the main elegant title with zero redundancy */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className={`text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 tracking-tight leading-none mb-4 ${
-              isRtl ? 'font-sans' : ''
-            }`}
-          >
-            {t.heroTitle}
-          </motion.h1>
-
-          {/* Subtitle */}
-          <motion.p
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className={`text-xl sm:text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-700 bg-clip-text text-transparent mb-10 max-w-2xl ${
+            className={`text-4xl sm:text-5xl md:text-6xl font-black bg-gradient-to-r from-slate-900 via-emerald-800 to-teal-900 bg-clip-text text-transparent tracking-tight leading-normal mb-8 ${
               isRtl ? 'font-sans' : ''
             }`}
           >
             {t.heroSubtitle}
-          </motion.p>
+          </motion.h1>
 
           {/* THE COW LOGO - Center of hero section with double concentric rotating orbit borders and badge anchors */}
           <motion.div
@@ -94,8 +82,8 @@ export default function Hero({ lang }: HeroProps) {
             {/* Outer dotted orbit */}
             <div className="absolute -inset-4 border border-dashed border-slate-200 rounded-full scale-100 group-hover:scale-105 group-hover:border-emerald-200/40 transition-all duration-[1200ms] ease-out pointer-events-none" />
 
-            {/* Inner rotating frame wrapper */}
-            <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full flex items-center justify-center bg-white shadow-xl shadow-emerald-900/5 border border-slate-100/80 p-1 transition-all duration-500 group-hover:shadow-emerald-900/10">
+            {/* Inner rotating frame wrapper with premium comfortable padding */}
+            <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full flex items-center justify-center bg-white shadow-xl shadow-emerald-900/5 border border-slate-100/80 p-5 sm:p-6 md:p-7 transition-all duration-500 group-hover:shadow-emerald-900/10">
               
               {/* Concentric styling inside */}
               <div className="absolute inset-1 border border-slate-100 rounded-full pointer-events-none" />
@@ -105,12 +93,12 @@ export default function Hero({ lang }: HeroProps) {
                 src={cowLogo}
                 alt="Logo Bovins TECHNOOTIZ"
                 referrerPolicy="no-referrer"
-                className="w-full h-full object-cover rounded-full relative z-10 transform group-hover:scale-102 transition-transform duration-500"
+                className="w-full h-full object-contain relative z-10 transform group-hover:scale-104 transition-transform duration-500"
               />
             </div>
 
             {/* Floating Badge Left */}
-            <div className={`absolute -left-12 sm:-left-20 top-8 hidden md:flex items-center gap-3 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-lg shadow-slate-900/5 border border-slate-100 hover:border-emerald-200 hover:bg-white transition-all duration-300 transform hover:-translate-y-1 ${
+            <div className={`absolute -left-12 sm:-left-16 md:-left-24 lg:-left-36 xl:-left-44 top-8 hidden md:flex items-center gap-3 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-lg shadow-slate-900/5 border border-slate-100 hover:border-emerald-200 hover:bg-white transition-all delay-75 duration-300 transform hover:-translate-y-1 whitespace-nowrap select-none ${
               isRtl ? 'flex-row-reverse text-right' : 'text-left'
             }`}>
               <div className="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
@@ -130,7 +118,7 @@ export default function Hero({ lang }: HeroProps) {
             </div>
 
             {/* Floating Badge Right */}
-            <div className={`absolute -right-12 sm:-right-20 bottom-8 hidden md:flex items-center gap-3 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-lg shadow-slate-900/5 border border-slate-100 hover:border-emerald-200 hover:bg-white transition-all duration-300 transform hover:-translate-y-1 ${
+            <div className={`absolute -right-12 sm:-right-16 md:-right-24 lg:-right-36 xl:-right-44 bottom-8 hidden md:flex items-center gap-3 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-lg shadow-slate-900/5 border border-slate-100 hover:border-emerald-200 hover:bg-white transition-all delay-75 duration-300 transform hover:-translate-y-1 whitespace-nowrap select-none ${
               isRtl ? 'flex-row-reverse text-right' : 'text-left'
             }`}>
               <div className="w-9 h-9 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0">

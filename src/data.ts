@@ -50,7 +50,7 @@ export const BOVINE_TYPES: BovineType[] = [
 export const TRANSLATIONS = {
   fr: {
     heroTitle: 'TECHNOOTIZ Sarl-s',
-    heroSubtitle: 'Pôle Import - Export Bovins',
+    heroSubtitle: 'Import-Export Bovins',
     heroTagline: 'Votre partenaire d\'excellence pour le commerce international des bovins entre le Luxembourg, l\'Europe et l\'Algérie.',
     ctaEstimate: 'Demander un devis',
     ctaContact: 'Nous contacter',
@@ -107,7 +107,7 @@ export const TRANSLATIONS = {
   },
   ar: {
     heroTitle: 'TECHNOOTIZ Sarl-s',
-    heroSubtitle: 'قطب استيراد وتصدير الأبقار والمواشي',
+    heroSubtitle: 'استيراد وتصدير الأبقار والمواشي',
     heroTagline: 'شريككم المتميز للتجارة الدولية للمواشي بين لوكسمبورغ، أوروبا والجزائر.',
     ctaEstimate: 'طلب تسعيرة (Devis)',
     ctaContact: 'اتصل بنا',
