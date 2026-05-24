@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { FileCheck, Phone, ShieldCheck, Award } from 'lucide-react';
 import { Language } from '../types';
 import { TRANSLATIONS } from '../data';
-import cowLogo from '../assets/images/cow_bovine_logo_1779494760885.png';
+import cowLogo from '../assets/images/cow_leaf_logo_1779560881243.png';
 
 interface HeroProps {
   lang: Language;
