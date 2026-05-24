@@ -44,23 +44,24 @@ export default function Header({ lang, setLang }: HeaderProps) {
           <div className="hidden md:flex items-center" />
 
           {/* Actions */}
-          <div className="hidden md:flex items-center gap-3">
-            {/* CTA Button is now Demande de Devis styled like the original Contact button */}
+          <div className="hidden md:flex items-center gap-3.5">
+            {/* Primary CTA Button: Demande de Devis */}
             <a
               href="#devis"
               onClick={(e) => handleScroll(e, '#devis')}
-              className="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-800 transition-colors shadow-sm cursor-pointer"
+              className="h-11 flex items-center justify-center gap-2 bg-slate-900 hover:bg-emerald-600 text-white hover:text-white px-5 rounded-xl text-sm font-semibold shadow-sm transition-all duration-300 ease-out transform hover:-translate-y-0.5 active:translate-y-0 active:scale-98 cursor-pointer group"
             >
-              <ClipboardList className="w-4 h-4 text-emerald-400" />
+              <ClipboardList className="w-4 h-4 text-emerald-400 group-hover:text-white transition-colors duration-300" />
               <span>{t.ctaEstimate}</span>
             </a>
+            
             {/* Companion Contact Button */}
             <a
               href="#contact"
               onClick={(e) => handleScroll(e, '#contact')}
-              className="flex items-center gap-2 bg-white text-slate-700 hover:text-slate-950 hover:bg-slate-50 border border-slate-200/80 px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-xs cursor-pointer"
+              className="h-11 flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-700 hover:text-slate-900 border border-slate-200 hover:border-slate-300 px-5 rounded-xl text-sm font-semibold shadow-xs transition-all duration-300 ease-out transform hover:-translate-y-0.5 active:translate-y-0 active:scale-98 cursor-pointer group"
             >
-              <PhoneCall className="w-3.5 h-3.5 text-emerald-550" />
+              <PhoneCall className="w-3.5 h-3.5 text-emerald-500 group-hover:scale-110 transition-transform duration-300" />
               <span>{lang === 'fr' ? 'Contact' : 'اتصل بنا'}</span>
             </a>
           </div>
@@ -87,11 +88,11 @@ export default function Header({ lang, setLang }: HeaderProps) {
             className="md:hidden border-b border-gray-100 bg-white"
           >
             <div className="px-4 pt-2 pb-6 space-y-3 block text-center">
-              <div className="pt-2 flex flex-col gap-2.5">
+              <div className="pt-2 flex flex-col gap-3">
                 <a
                   href="#devis"
                   onClick={(e) => handleScroll(e, '#devis')}
-                  className="w-full flex items-center justify-center gap-2 bg-slate-900 text-white py-2.5 rounded-lg text-sm font-medium hover:bg-slate-800 shadow-xs cursor-pointer"
+                  className="w-full h-11 flex items-center justify-center gap-2 bg-slate-900 border border-transparent text-white rounded-xl text-sm font-semibold shadow-xs active:scale-98 cursor-pointer"
                 >
                   <ClipboardList className="w-4 h-4 text-emerald-400" />
                   <span>{t.ctaEstimate}</span>
@@ -99,9 +100,9 @@ export default function Header({ lang, setLang }: HeaderProps) {
                 <a
                   href="#contact"
                   onClick={(e) => handleScroll(e, '#contact')}
-                  className="w-full flex items-center justify-center gap-2 border border-slate-200 bg-white text-slate-700 py-2.5 rounded-lg text-sm font-medium hover:bg-slate-50 shadow-xs cursor-pointer"
+                  className="w-full h-11 flex items-center justify-center gap-2 border border-slate-200 bg-white text-slate-700 rounded-xl text-sm font-semibold shadow-xs active:scale-98 cursor-pointer"
                 >
-                  <PhoneCall className="w-3.5 h-3.5 text-emerald-555" />
+                  <PhoneCall className="w-3.5 h-3.5 text-emerald-500" />
                   <span>{lang === 'fr' ? 'Contact' : 'اتصل بنا'}</span>
                 </a>
               </div>
