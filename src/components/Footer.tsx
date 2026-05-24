@@ -15,7 +15,7 @@ export default function Footer({ lang }: FooterProps) {
       {/* Luxurious green ambient light effect at the top */}
       <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent" />
       
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`flex flex-col md:flex-row md:items-center md:justify-between gap-8 ${isRtl ? 'md:flex-row-reverse' : ''}`}>
           
           {/* Primary Block: Logo & Description */}

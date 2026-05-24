@@ -83,18 +83,18 @@ export default function Hero({ lang }: HeroProps) {
             <div className="absolute -inset-4 border border-dashed border-slate-200 rounded-full scale-100 group-hover:scale-105 group-hover:border-emerald-200/40 transition-all duration-[1200ms] ease-out pointer-events-none" />
 
             {/* Inner rotating frame wrapper with premium comfortable padding */}
-            <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full flex items-center justify-center bg-white shadow-2xl shadow-emerald-950/10 border border-slate-100 p-2 transition-all duration-500 group-hover:shadow-emerald-950/15">
+            <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full flex items-center justify-center bg-white shadow-2xl shadow-emerald-950/10 border border-slate-100 p-1 overflow-hidden transition-all duration-500 group-hover:shadow-emerald-950/15">
               
               {/* Concentric styling inside */}
-              <div className="absolute inset-1 border border-slate-100/80 rounded-full pointer-events-none" />
-              <div className="absolute inset-2 border border-dashed border-emerald-500/20 rounded-full group-hover:rotate-6 transition-all duration-1000 pointer-events-none" />
+              <div className="absolute inset-1 border border-slate-100/80 rounded-full pointer-events-none z-20" />
+              <div className="absolute inset-2 border border-dashed border-emerald-500/20 rounded-full group-hover:rotate-6 transition-all duration-1000 pointer-events-none z-20" />
 
               <img
                 src={cowLogo}
                 alt="Logo Bovins TECHNOOTIZ"
                 referrerPolicy="no-referrer"
                 style={{ imageRendering: 'high-quality' as any }}
-                className="w-[88%] h-[88%] object-contain relative z-10 transition-transform duration-500 select-none pointer-events-none mix-blend-multiply [image-rendering:-webkit-optimize-contrast]"
+                className="w-full h-full object-contain relative z-10 scale-[1.55] origin-center transition-transform duration-500 select-none pointer-events-none mix-blend-multiply [image-rendering:-webkit-optimize-contrast]"
               />
             </div>
 
