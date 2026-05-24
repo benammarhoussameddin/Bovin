@@ -45,13 +45,13 @@ export default function Header({ lang, setLang }: HeaderProps) {
 
           {/* Actions */}
           <div className="hidden md:flex items-center gap-4">
-            {/* CTA Button is now Demande de Devis instead of Contact */}
+            {/* CTA Button is now Demande de Devis styled like the original Contact button */}
             <a
               href="#devis"
               onClick={(e) => handleScroll(e, '#devis')}
-              className="flex items-center gap-2 bg-emerald-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-emerald-500 transition-colors shadow-sm cursor-pointer"
+              className="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-800 transition-colors shadow-sm cursor-pointer"
             >
-              <ClipboardList className="w-4 h-4 text-emerald-100" />
+              <ClipboardList className="w-4 h-4 text-emerald-400" />
               <span>{t.ctaEstimate}</span>
             </a>
           </div>
@@ -77,12 +77,12 @@ export default function Header({ lang, setLang }: HeaderProps) {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden border-b border-gray-100 bg-white"
           >
-            <div className="px-4 pt-2 pb-6 space-y-3">
+            <div className="px-4 pt-2 pb-6 space-y-3 block text-center">
               <div className="pt-2 flex flex-col gap-3">
                 <a
                   href="#devis"
                   onClick={(e) => handleScroll(e, '#devis')}
-                  className="w-full text-center bg-emerald-600 text-white py-2.5 rounded-lg text-sm font-medium hover:bg-emerald-500 shadow-xs"
+                  className="w-full text-center bg-slate-900 text-white py-2.5 rounded-lg text-sm font-medium hover:bg-slate-800 shadow-xs cursor-pointer block"
                 >
                   {t.ctaEstimate}
                 </a>
