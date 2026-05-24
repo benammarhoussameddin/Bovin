@@ -93,7 +93,8 @@ export default function Hero({ lang }: HeroProps) {
                 src={cowLogo}
                 alt="Logo Bovins TECHNOOTIZ"
                 referrerPolicy="no-referrer"
-                className="w-[88%] h-[88%] object-contain relative z-10 transition-transform duration-500 select-none pointer-events-none mix-blend-multiply"
+                style={{ imageRendering: 'high-quality' as any }}
+                className="w-[88%] h-[88%] object-contain relative z-10 transition-transform duration-500 select-none pointer-events-none mix-blend-multiply [image-rendering:-webkit-optimize-contrast]"
               />
             </div>
 

@@ -96,16 +96,10 @@ export default function Footer({ lang }: FooterProps) {
 
         </div>
 
-        {/* Bottom Bar Details: Registration, Legal, Copyright */}
-        <div className={`pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500 ${isRtl ? 'flex-row-reverse' : ''}`}>
-          <div className={isRtl ? 'text-right' : 'text-left'}>
-            <p className="font-mono text-slate-450 hover:text-slate-300 transition-colors">
-              {t.footerLegal} • <span className="text-slate-500">{isRtl ? 'منظمة قانوناً' : 'Enregistrement de commerce'}</span>
-            </p>
-          </div>
-          
-          <div className="text-center sm:text-right">
-            <p className="text-slate-500 font-mono text-[10px]">
+        {/* Bottom Bar Details: Minimalist Copyright */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-[11px] text-slate-550 border-t border-slate-900/10">
+          <div className="text-center">
+            <p className="text-slate-500 font-mono text-[11px] select-none hover:text-slate-400 transition-colors duration-300">
               {t.footerCopyright}
             </p>
           </div>
