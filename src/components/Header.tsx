@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, ClipboardList } from 'lucide-react';
+import { Menu, X, ClipboardList, PhoneCall } from 'lucide-react';
 import { Language } from '../types';
 import { TRANSLATIONS } from '../data';
 import headerLogo from '../assets/images/technootiz_logo_header_1779551213095.png';
@@ -44,7 +44,7 @@ export default function Header({ lang, setLang }: HeaderProps) {
           <div className="hidden md:flex items-center" />
 
           {/* Actions */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-3">
             {/* CTA Button is now Demande de Devis styled like the original Contact button */}
             <a
               href="#devis"
@@ -53,6 +53,15 @@ export default function Header({ lang, setLang }: HeaderProps) {
             >
               <ClipboardList className="w-4 h-4 text-emerald-400" />
               <span>{t.ctaEstimate}</span>
+            </a>
+            {/* Companion Contact Button */}
+            <a
+              href="#contact"
+              onClick={(e) => handleScroll(e, '#contact')}
+              className="flex items-center gap-2 bg-white text-slate-700 hover:text-slate-950 hover:bg-slate-50 border border-slate-200/80 px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-xs cursor-pointer"
+            >
+              <PhoneCall className="w-3.5 h-3.5 text-emerald-550" />
+              <span>{lang === 'fr' ? 'Contact' : 'اتصل بنا'}</span>
             </a>
           </div>
 
@@ -78,13 +87,22 @@ export default function Header({ lang, setLang }: HeaderProps) {
             className="md:hidden border-b border-gray-100 bg-white"
           >
             <div className="px-4 pt-2 pb-6 space-y-3 block text-center">
-              <div className="pt-2 flex flex-col gap-3">
+              <div className="pt-2 flex flex-col gap-2.5">
                 <a
                   href="#devis"
                   onClick={(e) => handleScroll(e, '#devis')}
-                  className="w-full text-center bg-slate-900 text-white py-2.5 rounded-lg text-sm font-medium hover:bg-slate-800 shadow-xs cursor-pointer block"
+                  className="w-full flex items-center justify-center gap-2 bg-slate-900 text-white py-2.5 rounded-lg text-sm font-medium hover:bg-slate-800 shadow-xs cursor-pointer"
                 >
-                  {t.ctaEstimate}
+                  <ClipboardList className="w-4 h-4 text-emerald-400" />
+                  <span>{t.ctaEstimate}</span>
+                </a>
+                <a
+                  href="#contact"
+                  onClick={(e) => handleScroll(e, '#contact')}
+                  className="w-full flex items-center justify-center gap-2 border border-slate-200 bg-white text-slate-700 py-2.5 rounded-lg text-sm font-medium hover:bg-slate-50 shadow-xs cursor-pointer"
+                >
+                  <PhoneCall className="w-3.5 h-3.5 text-emerald-555" />
+                  <span>{lang === 'fr' ? 'Contact' : 'اتصل بنا'}</span>
                 </a>
               </div>
             </div>
