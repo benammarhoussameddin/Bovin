@@ -51,7 +51,7 @@ export const TRANSLATIONS = {
   fr: {
     heroTitle: 'TECHNOOTIZ Sarl-s',
     heroSubtitle: 'Import-Export Bovins',
-    heroTagline: 'Votre partenaire d\'excellence pour le commerce international des bovins entre le Luxembourg, l\'Europe et l\'Algérie.',
+    heroTagline: 'Votre partenaire de confiance pour le commerce international de bovins entre l’Europe, l’Algérie, la Tunisie et le Maroc.',
     ctaEstimate: 'Demander un devis',
     ctaContact: 'Nous contacter',
     
@@ -69,7 +69,7 @@ export const TRANSLATIONS = {
     strength3Desc: 'Gestion complète des formalités de douane, certificats sanitaires et paperasse.',
     
     // Form Quote
-    devisTitle: 'Demande de Devis Personnalisé',
+    devisTitle: 'Demandez votre devis personnalisé',
     devisSubtitle: 'Remplissez le formulaire ci-dessous pour recevoir une offre adaptée à vos besoins d\'importation.',
     labelSelectBovine: 'Type de Bovins',
     labelQty: 'Quantité estimée (Têtes)',
@@ -83,9 +83,10 @@ export const TRANSLATIONS = {
     
     // Contact Info
     contactTitle: 'Discutons de vos projets',
-    contactSubtitle: 'Bénéficiez de l\'expertise de nos gérants au Luxembourg et en Algérie.',
+    contactSubtitle: 'Notre équipe est à votre écoute pour vous accompagner dans vos projets d’importation et de commerce de bovins entre l’Europe, l’Algérie, la Tunisie et le Maroc.',
     gerant: 'Gérant',
     coGerant: 'Co-gérant',
+    responsableCommercial: 'Responsable Commercial',
     officeLux: 'Siège Social (Luxembourg)',
     officeDz: 'Représentation commerciale (Algérie)',
     copyBtn: 'Copier',
@@ -108,7 +109,7 @@ export const TRANSLATIONS = {
   ar: {
     heroTitle: 'TECHNOOTIZ Sarl-s',
     heroSubtitle: 'استيراد وتصدير الأبقار والمواشي',
-    heroTagline: 'شريككم المتميز للتجارة الدولية للمواشي بين لوكسمبورغ، أوروبا والجزائر.',
+    heroTagline: 'شريككم الموثوق للتجارة الدولية للمواشي بين أوروبا، الجزائر، تونس والمغرب.',
     ctaEstimate: 'طلب تسعيرة (Devis)',
     ctaContact: 'اتصل بنا',
     
@@ -126,7 +127,7 @@ export const TRANSLATIONS = {
     strength3Desc: 'إدارة كاملة للملفات الجمركية، الشهادات البيطرية والوثائق المطلوبة.',
     
     // Form Quote
-    devisTitle: 'طلب تسعيرة مخصصة',
+    devisTitle: 'اطلب تسعيرتك المخصصة',
     devisSubtitle: 'يرجى ملء النموذج أدناه لتلقي عرض أسعار يتناسب مع احتياجات الاستيراد الخاصة بكم.',
     labelSelectBovine: 'نوع الماشية المرجو',
     labelQty: 'الكمية التقديرية',
@@ -140,9 +141,10 @@ export const TRANSLATIONS = {
     
     // Contact Info
     contactTitle: 'تواصل مباشرة معنا',
-    contactSubtitle: 'استفد من خبرة مسيرينا المتواجدين في لوكسمبورغ والجزائر.',
+    contactSubtitle: 'فريقنا في خدمتكم لمرافقتكم في مشاريعكم لاستيراد وتجارة الأبقار بين أوروبا، الجزائر، تونس والمغرب.',
     gerant: 'المسير',
     coGerant: 'المسير الشريك',
+    responsableCommercial: 'المسؤول التجاري',
     officeLux: 'المقر الاجتماعي (لوكسمبورغ)',
     officeDz: 'التمثيل التجاري (الجزائر)',
     copyBtn: 'نسخ',
@@ -167,24 +169,17 @@ export const TRANSLATIONS = {
 export const CONTACTS = {
   gerants: [
     {
-      name: 'Gérant Luxembourg',
-      titleKey: 'gerant',
-      phone: '+352 661 497 947',
-      location: 'Luxembourg',
-      email: 'importexportbovin@technootiz.com'
-    },
-    {
-      name: 'Co-gérant Luxembourg',
-      titleKey: 'coGerant',
+      name: 'Responsable Commercial Luxembourg',
+      titleKey: 'responsableCommercial',
       phone: '+352 691 320 929',
       location: 'Luxembourg',
       email: 'importexportbovin@technootiz.com'
     },
     {
-      name: 'Co-gérant Algérie',
-      titleKey: 'coGerant',
-      phone: '+213 696 521 212',
-      location: 'Algérie',
+      name: 'Gérant Luxembourg',
+      titleKey: 'gerant',
+      phone: '+352 661 497 947',
+      location: 'Luxembourg',
       email: 'importexportbovin@technootiz.com'
     }
   ],

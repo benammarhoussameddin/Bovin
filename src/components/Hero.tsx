@@ -144,7 +144,7 @@ export default function Hero({ lang }: HeroProps) {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className={`text-base sm:text-lg text-slate-600 max-w-3xl mb-12 leading-relaxed ${
+            className={`text-lg sm:text-xl md:text-2xl text-slate-800 font-medium max-w-4xl mb-12 leading-relaxed tracking-tight ${
               isRtl ? 'font-sans' : ''
             }`}
           >
@@ -167,13 +167,15 @@ export default function Hero({ lang }: HeroProps) {
               <FileCheck className="w-5 h-5 text-emerald-200" />
               <span>{t.ctaEstimate}</span>
             </button>
-            <button
-              onClick={() => handleScrollTo('#contact')}
+            <a
+              href="https://wa.me/352691320929"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-3.5 bg-slate-950 hover:bg-slate-800 active:bg-slate-900 text-white font-semibold rounded-xl border border-slate-800 cursor-pointer flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5"
             >
               <Phone className="w-4 h-4 text-emerald-400" />
               <span>{t.ctaContact}</span>
-            </button>
+            </a>
           </motion.div>
 
         </div>

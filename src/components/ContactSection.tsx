@@ -33,7 +33,7 @@ export default function ContactSection({ lang }: ContactSectionProps) {
           {/* List of phone contacts */}
           <div className="space-y-4">
             <h4 className="text-xs font-mono font-bold text-slate-400 uppercase tracking-widest text-center sm:text-left">
-              {lang === 'fr' ? 'LIGNES TÉLÉPHONIQUES EN SERVICE' : 'خطوط الهاتف المفتوحة'}
+              {lang === 'fr' ? 'NOS CONTACTS' : 'اتصالاتنا'}
             </h4>
 
             {CONTACTS.gerants.map((g, idx) => {
@@ -90,7 +90,7 @@ export default function ContactSection({ lang }: ContactSectionProps) {
               <Mail className="w-5 h-5" />
             </div>
             <div>
-              <p className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider">EMAIL PROFESSIONNEL (mailto)</p>
+              <p className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider">EMAIL PROFESSIONNEL</p>
               <span className="text-base font-extrabold font-mono text-emerald-300 group-hover:text-emerald-400 transition-colors block break-all">
                 importexportbovin@technootiz.com
               </span>

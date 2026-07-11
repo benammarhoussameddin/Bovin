@@ -2,9 +2,11 @@ import { useState, useEffect } from 'react';
 import { Language } from './types';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import GallerySection from './components/GallerySection';
 import QuoteForm from './components/QuoteForm';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 export default function App() {
   const [lang, setLang] = useState<Language>('fr');
@@ -31,12 +33,16 @@ export default function App() {
       {/* Main Sections */}
       <main className="grow">
         <Hero lang={lang} />
-        <QuoteForm lang={lang} />
         <ContactSection lang={lang} />
+        <QuoteForm lang={lang} />
+        <GallerySection lang={lang} />
       </main>
 
       {/* Footer */}
       <Footer lang={lang} />
+
+      {/* Floating global WhatsApp support */}
+      <WhatsAppButton lang={lang} />
     </div>
   );
 }

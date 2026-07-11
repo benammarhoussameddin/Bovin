@@ -21,12 +21,13 @@ export default function Footer({ lang }: FooterProps) {
           {/* Primary Block: Logo & Description */}
           <div className={`space-y-3.5 max-w-lg flex flex-col items-center ${isRtl ? 'md:items-end' : 'md:items-start'}`}>
             <div className={`flex items-center gap-3 ${isRtl ? 'flex-row-reverse' : ''}`}>
-              <div className="bg-white px-2 py-1 rounded-md h-8 flex items-center justify-center shadow-md border border-white hover:border-emerald-100/55 transition-colors duration-300">
+              <div className="bg-white px-3 py-1.5 rounded-lg h-9 sm:h-10 flex items-center justify-center shadow-md border border-white hover:border-emerald-300 transition-all duration-300 transform md:hover:scale-[1.02]">
                 <img
                   src={headerLogo}
                   alt="TECHNOOTIZ"
                   referrerPolicy="no-referrer"
-                  className="h-4.5 w-auto object-contain select-none"
+                  style={{ imageRendering: 'high-quality' as any }}
+                  className="h-5 sm:h-6 w-auto object-contain select-none [image-rendering:-webkit-optimize-contrast] antialiased"
                 />
               </div>
               <span className="text-[10px] bg-emerald-950/45 text-emerald-400 font-mono font-medium px-2 py-0.5 rounded border border-emerald-900/25 tracking-wider">
