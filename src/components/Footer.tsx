@@ -38,7 +38,7 @@ export default function Footer({ lang }: FooterProps) {
             <p className={`text-xs text-slate-400 leading-relaxed max-w-sm ${isRtl ? 'text-center md:text-right' : 'text-center md:text-left'}`}>
               {isRtl 
                 ? 'تصدير النخبة البقرية من قلب أوروبا مع المرافقة الكاملة والشهادات الصحية.'
-                : 'Pôle d\'excellence pour la sélection et l\'export de bovins d\'élite depuis le Luxembourg.'
+                : 'Pôle d\'excellence pour la sélection et l\'export de bovins depuis l\'Europe.'
               }
             </p>
           </div>

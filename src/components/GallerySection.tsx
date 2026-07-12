@@ -212,7 +212,7 @@ export default function GallerySection({ lang }: GallerySectionProps) {
       fr: {
         title: 'Bovins sélectionnés',
         subtitle: 'Sélection d\'élite',
-        desc: 'Lot homogène de jeunes bovins sélectionnés pour leur excellente santé et leur conformation.',
+        desc: 'Sélection de bovins issus d\'exploitations européennes répondant à des critères élevés de qualité, de santé et de traçabilité.',
         specs: {
           race: 'Sélection d’élite rustique',
           origin: 'Europe',
@@ -250,7 +250,7 @@ export default function GallerySection({ lang }: GallerySectionProps) {
         desc: 'Vaches gestantes (génisses pleines) certifiées sélectionnées avec fiches de saillie et d\'échographie vétérinaire.',
         specs: {
           race: 'Sélection laitière & mixte certifiée',
-          origin: 'Europe (France, Allemagne, Hollande)',
+          origin: 'Europe',
           weight: '550 - 680 kg',
           purpose: 'Production laitière & Renouvellement',
         }
@@ -405,7 +405,7 @@ export default function GallerySection({ lang }: GallerySectionProps) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header Section */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-6">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono uppercase tracking-wider mb-4">
             <Award className="w-3.5 h-3.5" />
             <span>{isRtl ? 'جودة النخبة المضمونة' : 'EXCELLENCE & TRAÇABILITÉ'}</span>
@@ -413,16 +413,10 @@ export default function GallerySection({ lang }: GallerySectionProps) {
           <h2 className={`text-3xl sm:text-4xl font-black tracking-tight ${isRtl ? 'font-sans' : ''}`}>
             {sectionTitle}
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base mt-3 max-w-2xl mx-auto leading-relaxed">
-            {isRtl 
-              ? 'اكتشف مجموعتنا المختارة من المواشي المخصصة للتربية والتسمين، بالإضافة إلى الأبقار الحوامل، والتي تم اختيارها بعناية لتلبية احتياجات الاستيراد الخاصة بكم.'
-              : 'Découvrez notre sélection de bovins destinés à l’élevage et à l’engraissement, ainsi que nos vaches gestantes, sélectionnés avec soin pour répondre à vos besoins d’importation.'
-            }
-          </p>
         </div>
 
         {/* Dynamic Responsive 5-Card Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-6">
           {galleryItems.map((item, idx) => (
             <GalleryCard
               key={item.id}
@@ -575,12 +569,6 @@ export default function GallerySection({ lang }: GallerySectionProps) {
                       ))}
                     </div>
                   </div>
-                </div>
-
-                {/* Footer of panel */}
-                <div className="mt-8 pt-4 border-t border-slate-850 flex items-center justify-between text-xs text-slate-500 font-mono">
-                  <span>Image {lightboxImageIndex + 1} / {galleryItems[selectedItemIndex].images.length}</span>
-                  <span className="text-slate-400">TechnOptiz Sarl-s</span>
                 </div>
               </div>
 
